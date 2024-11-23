@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "sst dev",
+    "deploy:dev": "sst deploy --stage dev",
+    "deploy:production": "sst deploy --stage production"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.699.0",
+    "@types/aws-lambda": "^8.10.145",
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "sst": "3.2.5"
+  }
+}
