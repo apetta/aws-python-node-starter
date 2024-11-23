@@ -3,7 +3,7 @@
 export default $config({
   app(input) {
     return {
-      name: "aws-python-container",
+      name: "python-node-app",
       removal: input?.stage === "production" ? "retain" : "remove",
       home: "local",
       providers: {
