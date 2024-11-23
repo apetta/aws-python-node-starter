@@ -2,9 +2,15 @@
 
 Deploy hybrid python & node.js applications using [sst v3](https://sst.dev).
 
-This project uses Bun, make sure to install it first. See Bun's [docs](https://bun.sh/docs).
-
 **BUG: SST version currently fixed at 3.2.5; see [issue](https://github.com/sst/sst/issues/5079).**
+
+## Setup
+
+```sh
+pnpm install
+```
+
+**Ensure you have the AWS CLI configured locally.**
 
 ## AWS Resources
 
