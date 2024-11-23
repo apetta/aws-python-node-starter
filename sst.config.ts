@@ -12,7 +12,7 @@ export default $config({
     };
   },
   async run() {
-    const python = new sst.aws.Function("MyPythonContainer", {
+    const helloWorld = new sst.aws.Function("MyPythonContainer", {
       python: {
         container: true,
       },
@@ -40,7 +40,7 @@ export default $config({
     });
 
     return {
-      python: python.url,
+      helloWorld: helloWorld.url,
       queue: queue.url,
       createNewMessage: createNewMessage.url,
     };
