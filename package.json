@@ -1,8 +1,11 @@
 {
   "scripts": {
     "dev": "sst dev",
-    "deploy:dev": "sst deploy --stage dev",
-    "deploy:production": "sst deploy --stage production"
+    "deploy:dev": "pnpm python:clean && sst deploy --stage dev && pnpm python:init",
+    "deploy:production": "pnpm python:clean && sst deploy --stage production && pnpm python:init",
+    "python:init": "cd python-functions && UV_PROJECT_ENVIRONMENT='../.venv' uv sync",
+    "python:clean": "rm -r -f .venv",
+    "uv": "cd python-functions && uv"
   },
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.699.0",
