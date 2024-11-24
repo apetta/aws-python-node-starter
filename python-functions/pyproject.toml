@@ -6,6 +6,7 @@ authors = [
     {name = "Nick Wall", email = "mail@walln.dev" },
 ]
 dependencies = [
+    "aws-lambda-typing>=2.20.0",
     "numpy>=2.1.1",
 ]
 
